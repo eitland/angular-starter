@@ -46,6 +46,8 @@ import { AppState } from './app.service';
       <router-outlet></router-outlet>
     </main>
 
+    <hot-table></hot-table>
+
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
     <footer>

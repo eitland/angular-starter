@@ -34,6 +34,7 @@ import { XLargeDirective } from './home/x-large';
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
+import { HotTableModule } from 'angular-handsontable';
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
@@ -69,7 +70,8 @@ type StoreType = {
     RouterModule.forRoot(ROUTES, {
       useHash: Boolean(history.pushState) === false,
       preloadingStrategy: PreloadAllModules
-    })
+    }),
+    HotTableModule
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
