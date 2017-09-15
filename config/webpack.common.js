@@ -228,8 +228,7 @@ module.exports = function (options) {
        * See: https://github.com/webpack/docs/wiki/optimization#multi-page-app
        */
       new CommonsChunkPlugin({
-        name: 'polyfills',
-        chunks: ['polyfills']
+        name: ['main', 'polyfills']
       }),
       /**
        * This enables tree shaking of the vendor modules
