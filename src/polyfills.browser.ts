@@ -35,7 +35,7 @@ import 'core-js/es6/reflect';
 
 import 'core-js/es7/reflect';
 
-import 'handsontable';
+import 'angular-handsontable';
 
 import 'zone.js/dist/zone';
 
